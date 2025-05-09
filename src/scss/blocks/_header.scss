@@ -1,0 +1,19 @@
+.header {
+  padding-block: 1.2rem;
+  &__logo {
+    gap: 10px;
+  }
+  &__contact {
+    justify-items: end;
+    gap: 1.3rem;
+    a {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+    address {
+      font-weight: 300;
+      font-size: 1.25rem;
+    }
+  }
+}
