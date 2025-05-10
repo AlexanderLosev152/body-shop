@@ -3,15 +3,24 @@
   --second-family: 'Golos', sans-serif;
   --third-family: 'Rubik', sans-serif;
 
-  --font-size: clamp(1rem, 1.5vw, 1.25rem);
   --font-weight: 400;
 
-  --container-w: 1113px;
+  --fs-1: 5rem; //80px;
+  --fs-2: 3.75rem; //60px;
+  --fs-3: 2.625rem; //42px;
+  --fs-4: 2.18rem; //35px;
+  --fs-5: 1.875rem; //30px;
+  --fs-6: 1.375rem; //22px;
+  --fs-7: clamp(1rem, 1.5vw, 1.25rem); //20px;
+  --fs-8: 1.125rem; //18px;
+  --fs-9: 1rem; // 16px;
+
+  --container-w: 69.5rem; //1113px
   --container-p: 1rem;
 
   // color
 
   --ligth: #fff;
   --bg: #030202;
-  --accent-color: #900000;
+  --accent-color: 255, 0, 0;
 }

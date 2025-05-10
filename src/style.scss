@@ -11,10 +11,11 @@
 
 @import './scss/blocks/header';
 @import './scss/blocks/hero';
+@import './scss/blocks/about';
 
 body {
   font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-size: var(--fs-7);
   font-weight: var(--font-weight);
   color: var(--ligth);
   background: var(--bg);
