@@ -1,8 +1,8 @@
 .h1 {
   font-family: var(--second-family);
   font-weight: 700;
-  font-size: 95px;
-  text-align: right;
+  font-size: clamp(3rem, 11vw, 6rem);
+  line-height: 1;
 }
 .h2 {
   font-family: var(--font-family);

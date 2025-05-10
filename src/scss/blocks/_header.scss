@@ -1,19 +1,33 @@
+@import '../utils/media';
 .header {
   padding-block: 1.2rem;
   &__logo {
-    gap: 10px;
+    gap: 0.6rem;
+    a {
+      max-width: 250px;
+    }
+  }
+  &__social {
+    @include media($mobile) {
+      display: none;
+    }
   }
   &__contact {
     justify-items: end;
-    gap: 1.3rem;
+    gap: clamp(0.6rem, 2vw, 1.3rem);
     a {
       font-family: var(--font-family);
       font-weight: 700;
-      font-size: 1.4rem;
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      svg {
+        width: 118px;
+        height: 103px;
+      }
     }
     address {
       font-weight: 300;
-      font-size: 1.25rem;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      text-align: end;
     }
   }
 }

@@ -3,7 +3,7 @@
   --second-family: 'Golos', sans-serif;
   --third-family: 'Rubik', sans-serif;
 
-  --font-size: 1.25rem;
+  --font-size: clamp(1rem, 1.5vw, 1.25rem);
   --font-weight: 400;
 
   --container-w: 1113px;
