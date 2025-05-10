@@ -1,4 +1,8 @@
 .about {
+  padding-block: 2rem;
+  background-repeat: no-repeat;
+  background-position: center right;
+  // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   &__items {
     gap: 1rem;
     margin-bottom: 5.3rem;
@@ -20,12 +24,31 @@
       }
     }
   }
-  &__video {
-    gap: 41px;
-    div {
-      video {
-        max-width: 750px;
-      }
+  &__video-wrapper {
+    gap: 2.6rem;
+  }
+  &__video-box {
+    video {
+      max-width: 42rem;
+      height: 418px;
+    }
+  }
+  &__video-text {
+    backdrop-filter: blur(10px);
+    background: linear-gradient(
+      138deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    padding: 1rem;
+    border-radius: 0.7rem;
+    h3 {
+      font-size: var(--fs-4);
+      margin-bottom: 1.8rem;
+    }
+    p {
+      font-size: var(--fs-8);
+      line-height: 1.2;
     }
   }
 }
