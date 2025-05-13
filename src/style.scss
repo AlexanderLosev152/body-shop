@@ -10,9 +10,13 @@
 @import './scss/globals/tailwind-classes';
 @import './scss/globals/typography';
 
+@import './scss/blocks/btn';
+
 @import './scss/blocks/header';
 @import './scss/blocks/hero';
 @import './scss/blocks/about';
+@import './scss/blocks/services';
+@import './scss/blocks/cost';
 
 body {
   font-family: var(--font-family);

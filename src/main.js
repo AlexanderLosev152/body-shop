@@ -26,7 +26,15 @@ import './style.scss';
 // });
 
 const swiper = new Swiper('.mySwiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.services__button-next',
+    prevEl: '.services__button-prev',
   },
 });

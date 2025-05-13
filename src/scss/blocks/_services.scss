@@ -1,0 +1,103 @@
+.services {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  &__title {
+    margin-bottom: 1rem;
+    font-size: var(--fs-3);
+  }
+  &__descr {
+    font-size: var(--fs-5);
+    font-weight: 500;
+    max-width: 31rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
+  &__swiper {
+    position: relative;
+    .swiper-pagination {
+      position: absolute;
+      top: 0;
+      z-index: 10;
+    }
+    .swiper-wrapper {
+      position: relative;
+      z-index: 10;
+      margin-top: 1rem;
+      padding-bottom: 10rem;
+      height: 420px;
+    }
+    .swiper-slide {
+      opacity: 0.3;
+      transition: margin-top 0.3s;
+      max-height: 424px;
+    }
+    .swiper-slide-next {
+      position: relative;
+      margin-top: 8rem;
+      opacity: 1;
+    }
+  }
+  &__button-box {
+    position: absolute;
+    z-index: 100;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5rem;
+    gap: 8.75rem;
+    button {
+      cursor: pointer;
+    }
+    button:nth-child(2) {
+      transform: rotate(-180deg);
+    }
+  }
+  &__swiper-wrapper {
+    position: relative;
+  }
+  .swiper-slide {
+    padding: 2.2rem;
+    backdrop-filter: blur(10px);
+    border-radius: 19px;
+    background: linear-gradient(
+      138deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+
+    h3 {
+      font-weight: 500;
+      font-size: var(--fs-5);
+      margin-bottom: 0.9em;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 0.9em;
+      text-wrap: wrap;
+      text-align: center;
+      span {
+        font-weight: 700;
+        font-size: var(--fs-5);
+      }
+    }
+    a {
+      margin-top: 1em;
+    }
+  }
+  .swiper-pagination {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    .swiper-pagination-bullet {
+      width: 0.5rem;
+      height: 0.5rem;
+      background: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+    }
+    .swiper-pagination-bullet-active {
+      background: var(--ligth);
+    }
+  }
+}
